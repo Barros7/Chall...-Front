@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #F2F2F2;
+}
+
+.buttonLogout:hover {
+    background-color: #BE1522;
+}
+
+/*
+    Header
+*/
+
+.banner {
+    background-image: url("../bannerImage.webp");
+    background-color: #cccccc;
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.horaBanner > * {
+    font-size: 80px;
+    color: #B2BEBF;
+}
+
+/*
+    Página de login
+*/
+
+.form {
+    background-color: #B2BEBF;
+}
+
+.formulariosAuth {
+    margin-top: 3%;
+    padding: 4%;
+    display: flex;
+    background-color: #B2BEBF;
+    flex-direction: column;
+    height: auto;
+}
+
+.form h1 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1%;
+}
+
+.inputs-dados {
+    border: #000021 1px solid;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+    height: 3em;
+}
+
+.button {
+    background-color: #000021;
+    border: none;
+    border-radius: 10px;
+    color: #fefefe;
+    font-size: 24px;
+    font-weight: bolder;
+    width: 100%;
+    height: 50px;
+}
+
+.button:hover {
+    border: #BE1522 2px solid;
+    background-color: #BE1522;
+    cursor: pointer;
+}
+
+label {
+    padding: 8px 8px;
+    width: 50%;
+    height: 3em;
+    background-color: #000021;
+    color: #FFF;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: pointer;
+}
+
+.linkAuth {
+    width: 50%;
+    font-weight: lighter;
+}
+
+.linkAuth :hover {
+    background-color: #BE1522;
+    font-weight: 700;
+
+}
+
+/*
+    Estilo da página para Registar novo funcionário
+*/
+.inputFiles {
+    display: flex;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+label:hover {
+    background-color: #BE1522;
+}
+
+/* Estilo da página principal, onde o funcionário vai picar o ponto */
+
+.opcoes-relogio {
+    background-color: #2a2e2e;
+    color: #f1ecec;
+    margin: 0.5% 0;
+    padding: 5% 0;
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.opcoes-relogio:hover {
+    background-color: #BE1522;
+    cursor: pointer;
+}
+
+.captura-imagem {
+    background-color: #000021;
+    color: #F2F2F2;
+}
+
+.sidebar{
+    background-color: #B2BEBF;
+    height: 100vh;
+}
+
+
+aside{
+    border-left: 1px solid #2a2e2e;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.caixas {
+    width: 45%;
+}
+.imagemPerfil{
+    border-radius: 50px;
+    height: 100px;
+    width: 100px;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* Responsive*/
+@media only screen and (max-width: 768px) {
+  .formulariosAuth {
+    font-size:smaller;
+    margin: 25% 0 0 0;
+    width: 100%;
+  }
+  .inputFiles > *{
+    font-size: smaller;
+  }
+}
